@@ -1,0 +1,171 @@
+*{
+  /* border: solid 1px; */
+  transition-duration: 0.8s;
+}
+
+body,html {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  background: #eee;
+}
+
+.card{
+  width: 70%;
+  height: 90%;
+  max-width: 500px;
+  min-width: 250px;
+  max-height: 600px;
+  min-height: 350px;
+  position: relative;
+  border-radius: 40px;
+  background-color: rgb(204,222,222);
+  box-shadow: 5px 5px 25px rgba(0,0,0,0.5);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardLarge{
+  width: 70%;
+  height: 90%;
+  max-width: 500px;
+  min-width: 250px;
+  max-height: 600px;
+  min-height: 350px;
+  position: relative;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.giftClose{
+  margin: 80px auto;
+  width: 80%;
+  display: block;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.giftOpen{
+  display: none;
+  margin: 80px auto;
+  width: 80%;
+  animation-name: open;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+}
+
+.daddyCake{
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 90;
+  display: none;
+}
+
+.member{
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 80;
+  display: none;
+}
+
+#mommy{
+  transform: translate(-160%, -60%);
+}
+
+#brother{
+  transform: translate(-50%, 20%);
+}
+
+#me{
+  transform: translate(40%, -20%);
+}
+
+#sister{
+  transform: translate(50%, -120%);
+}
+
+#mimi{
+  transform: translate(-120%, -150%);
+}
+
+.text{
+  display: none;
+  font-size: 10%;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translateX(-50%);
+  animation-fill-mode: forwards;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(111, 122, 122);
+}
+
+@keyframes open {
+  0%{
+    width: 80%;
+    transform: translateY(0);
+  }
+    
+  100%{
+    width: 50%;
+    transform: translateY(500px);
+  }
+    
+}
+
+@keyframes daddyPop{
+  0%{
+    width: 0;
+    top: 80%;
+  }
+  90%{
+    width: 70%;
+    top: 35%;
+  }
+  100%{
+    width: 60%;
+    top: 40%;
+  }
+}
+
+@keyframes memberPop {
+  0% {
+    width: 0;
+    top: 80%;
+  }
+  90%{
+    width: 50%;
+    top: 45%;
+  }
+  100%{
+    width: 40%;
+    top: 50%;
+  }
+}
+
+@keyframes textPop {
+  0%{
+    width: 0;
+    top: 100%;
+  }
+  100%{
+    width: 100%;
+    top: 90%;
+  }
+}
+
+
+
