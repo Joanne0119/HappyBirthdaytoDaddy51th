@@ -6,6 +6,7 @@ function openGift(){
   giftClose.style.display = 'none';
   giftOpen.style.display = 'block';
   giftOpen.play();
+  giftOpen.style.contain = 'contain';
   showMembers();
 }
 
